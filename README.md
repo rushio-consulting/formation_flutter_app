@@ -12,6 +12,10 @@ The hello-world flutter project:
 
     git checkout step-0
 
-### Quick learning of mobx.dart
+### Quick learn of mobx.dart
 
     git checkout t-learn-mobx-dart
+
+### Quick learn of provider
+
+    git checkout t-learn-provider-dart
