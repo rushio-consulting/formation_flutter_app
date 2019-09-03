@@ -6,7 +6,7 @@ import 'package:formation_flutter_app/src/stores/counter.dart'; // Import the Co
 class CounterInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final counter = Provider.of<Counter>(context);
+    final counter = Provider.of<Counter>(context,listen: false);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
