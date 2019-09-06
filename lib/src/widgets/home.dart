@@ -1,9 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:formation_flutter_app/src/stores/movie.dart';
 import 'package:formation_flutter_app/src/widgets/movies_list.dart';
-
-import 'counter_info.dart';
-import 'increment_button.dart';
+import 'package:provider/provider.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage();
@@ -15,9 +14,8 @@ class MyHomePage extends StatelessWidget {
         title: Text('Learning Flutter: MovieDB'),
       ),
       body: Center(
-        child: MoviesListWidget(),
+        child: MoviesListWidget(Provider.of<MovieResponseStore>(context, listen: false)),
       ),
-     // floatingActionButton: IncrementFloatingActionButton(), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
